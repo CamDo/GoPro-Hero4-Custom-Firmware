@@ -1,0 +1,12 @@
+######################################################################
+#  Turn WiFi on and maintain WiFi connection after exiting USB mode  #
+######################################################################
+
+# Start delay
+sleep 2
+
+# Turn On WiFi
+wifi on
+
+# Enable WiFi monitor 
+wifiEnableMonitor

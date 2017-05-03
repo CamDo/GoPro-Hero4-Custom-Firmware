@@ -1,0 +1,11 @@
+5.10.8
+
+# ip.csi file format:
+# First line of file must contain an IP address prefix
+# excluding the last octet, which is always .9
+# The IP address must also be exactly 6 characters long
+#
+# Examples:
+# 10.9.2 -> Camera has IP address of 10.9.2.9
+# 5.10.8 -> Camera has IP address of 5.10.8.9
+# 1.1.1 -> INVALID, not 6 characters long

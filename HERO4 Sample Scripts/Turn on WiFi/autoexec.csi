@@ -1,0 +1,9 @@
+######################
+#    Turn WiFi on    #
+######################
+
+# Start delay
+sleep 2
+
+# Turn On WiFi
+wifi on

@@ -1,0 +1,19 @@
+######################################################
+#  Connects the camera to a local WiFi router as a   #
+#   client to enable issueing of REST GET commands   #
+#    Adjust personal router information on line 8    #
+######################################################
+
+#Edit the restConnect command line below to include your personal router information:
+restConnect MyRouter_guest 11:AA:22:BB:33:C4
+
+
+###THE FOLLOWING NOTES EXPLAIN THE restConnect COMMAND SYNTAX###
+
+#restConnect RouterSSID RouterMAC
+
+#RouterMAC - is the MAC address of the router. Change for your particular router normally available in the router admin pages. Can also use arp -a command from the command line to find if not obvious in the router interface. The format for the MAC address must be that every two characters of the address are separated with a colon (:) - For example 11:AA:22:BB:33:C4
+
+#Router SSID - is the wireless network's SSID. The SSID cannot contain spaces or symbols, with the exception of hyphens (-) and underscores (_). Note that the wireless network must be an open network ie no security. You can hide the SSID and use MAC address filtering for security.
+
+##if you want to use MAC address filtering for the GoPro just run the script and watch your 'wireless clients' on the router. You'll see the GoPro connect and you can note down the MAC address. The MAC address of the GoPro can also be found in the version.txt file of the SD card.

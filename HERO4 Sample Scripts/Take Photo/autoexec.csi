@@ -1,0 +1,16 @@
+###############################################################################
+#  Set AutoOff to 1 minute, take one photo, wait 10 seconds, turn off camera  #
+###############################################################################
+
+# Set camera AutoOff to 1 minute
+setting AutoOff 1
+
+# Switch to photo mode and take a picture
+mode photo
+shutter press
+
+# Give it time to save, could shorten for faster cards
+sleep 10
+
+# Power off the camera
+shutdown

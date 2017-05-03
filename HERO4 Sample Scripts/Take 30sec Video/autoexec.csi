@@ -1,0 +1,20 @@
+######################################################################################
+#  Set camera AutoOff to 1 minute, shoot 30 second video, wait 10 seconds, turn off  #
+######################################################################################
+
+# Set camera AutoOff to 1 minute
+setting AutoOff 1
+
+# Switch to video mode and take a picture
+mode video
+shutter press
+
+# Record for 30 seconds and then stop
+sleep 30
+shutter stop
+
+# Give it time to save, could shorten for faster cards
+sleep 10
+
+# Power off the camera
+shutdown

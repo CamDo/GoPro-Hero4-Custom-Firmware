@@ -1,0 +1,51 @@
+######################################################
+#      Take photo, upload to dropbox server          #
+#    Adjust upload command information on line 27    #
+######################################################
+
+#All lines that begin with a # are comments.
+#This is a script that will execute every time the camera turns on.
+#The script will take a photo, upload to the CamDo Dropbox site and turn the camera off waiting for the next turn on event.
+
+#Sets the auto turn off to 5 minutes 
+setting AutoOff 5
+
+#Set the volume of the camera beep if you want. (off|70%|100%)
+setting Beep off
+
+#Turn wifi off in case it has been left on
+wifi off
+sleep 5
+
+#Change the camera mode to photo. Make sure that the default GoPro photo settings are what the project requires as it will pick up the last photo mode settings.
+mode photo
+
+#take a photo.
+shutter press
+
+#Edit the Dropbox upload command line below to include your personal information:
+upload MyRouter_guest 11:AA:22:BB:33:C4 30 120 photos dropbox name@email.com_12345
+
+#turn off camera
+sleep 5
+shutdown
+
+###THE FOLLOWING NOTES EXPLAIN THE DROPBOX COMMAND SYNTAX###
+
+#upload RouterSSID RouterMAC RouterConnectTimeout OverallTimeout (photos|thumbs) dropbox CAMDO_USERID
+
+#CAMDO_USERID - is your email address followed by a five digit number that will distinguish the folder where the images will be saved.
+
+#dropbox - distinguishes that the command is for automatically uploading an image to DropBox.
+
+#(photos|thumbs) - if you want to upload the full sized photo, use the photos command. If you want to only upload smaller thumbnails (approx 1000 pixels wide), use the thumbs command.
+
+#OverallTimeout - is the maximum amount of time in seconds that the camera will attempt to upload before disconnecting. If the file is not transferred, it will be cashed and another attempt to upload will occur after a successful transfer.
+
+#RouterConnectTimeout - is the maximum amount of time in second that the camera will have to verify the connection to the selected WiFi network before the command line is skipped.
+
+#RouterMAC - is the MAC address of the router. Change for your particular router normally available in the router admin pages. Can also use arp -a command from the command line to find if not obvious in the router interface. The format for the MAC address must be that every two characters of the address are separated with a colon (:) - example 11:AA:22:BB:33:C4
+
+#Router SSID - is the wireless network's SSID. The SSID cannot contain spaces or symbols, with the exception of hyphens (-) and underscores (_). Note that the wireless network must be an open network ie no security. You can hide the SSID and use MAC address filtering for security.
+
+##if you want to use MAC address filtering for the GoPro just run the script and watch your 'wireless clients' on the router. You'll see the GoPro connect and you can note down the MAC address. The MAC address of the GoPro can also be found in the version.txt file of the SD card.

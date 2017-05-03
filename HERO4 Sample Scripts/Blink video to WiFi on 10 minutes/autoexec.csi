@@ -1,0 +1,24 @@
+############################################################
+# WiFi script is used with Blink by selecting a video mode #
+# recording with an interval longer than the WiFi on time  #
+############################################################
+
+#initial wait period to avoid running script when taking time lapse images
+sleep 50
+
+#to end the recording of video
+shutter stop
+sleep 10
+shutter stop
+
+#turn on WiFi
+wifi on
+
+#amount of time for WiFi to remain active (in seconds - 10 minutes)
+sleep 600
+
+#turn WiFi off
+wifi off
+
+#turn off camera and WiFi to conserve battery
+shutdown
