@@ -1,0 +1,105 @@
+#Every setting available through the menu system is accessible. 
+#The following lists all of the settings that can be controlled via your script.
+#
+setting VideoFormat (NTSC | PAL)
+setting VideoPreset (0-59)
+0: 4K, Wide, NTSC: 30FPS / PAL: 25FPS
+1: 4K, Wide, NTSC: 24FPS / PAL: 24FPS
+2: 4K-SuperView, Wide, NTSC: 24FPS / PAL: 24FPS
+3: 2.7K-16:9, Wide, NTSC: 60FPS / PAL: 50FPS
+4: 2.7K-16:9, Wide, NTSC: 48FPS / PAL: 48FPS
+5: 2.7K-16:9, Wide, NTSC: 30FPS / PAL: 25FPS
+6: 2.7K-16:9, Wide, NTSC: 24FPS / PAL: 24FPS
+7: 2.7K-16:9, Medium, NTSC: 60FPS / PAL: 50FPS
+8: 2.7K-16:9, Medium, NTSC: 48FPS / PAL: 48FPS
+9: 2.7K-16:9, Medium, NTSC: 30FPS / PAL: 25FPS
+10: 2.7K-16:9, Medium, NTSC: 24FPS / PAL: 24FPS
+11: 2.7K-SuperView, Wide, NTSC: 30FPS / PAL: 25FPS
+12: 2.7K-4:3, Wide, NTSC: 30FPS / PAL: 25FPS
+13: 1440p, Wide, NTSC: 80FPS / PAL: 80FPS
+14: 1440p, Wide, NTSC: 60FPS / PAL: 50FPS
+15: 1440p, Wide, NTSC: 48FPS / PAL: 48FPS
+16: 1440p, Wide, NTSC: 30FPS / PAL: 25FPS
+17: 1440p, Wide, NTSC: 24FPS / PAL: 24FPS
+18: 1080p-SuperView, Wide, NTSC: 80FPS / PAL: 80FPS
+19: 1080p-SuperView, Wide, NTSC: 60FPS / PAL: 50FPS
+20: 1080p-SuperView, Wide, NTSC: 48FPS / PAL: 48FPS
+21: 1080p-SuperView, Wide, NTSC: 30FPS / PAL: 25FPS
+22: 1080p-SuperView, Wide, NTSC: 24FPS / PAL: 24FPS
+23: 1080p, Wide, NTSC: 120FPS / PAL: 120FPS
+24: 1080p, Wide, NTSC: 90FPS / PAL: 90FPS
+25: 1080p, Wide, NTSC: 60FPS / PAL: 50FPS
+26: 1080p, Wide, NTSC: 48FPS / PAL: 48FPS
+27: 1080p, Wide, NTSC: 30FPS / PAL: 25FPS
+28: 1080p, Wide, NTSC: 24FPS / PAL: 24FPS
+29: 1080p, Medium, NTSC: 60FPS / PAL: 50FPS
+30: 1080p, Medium, NTSC: 48FPS / PAL: 48FPS
+31: 1080p, Medium, NTSC: 30FPS / PAL: 25FPS
+32: 1080p, Medium, NTSC: 24FPS / PAL: 24FPS
+33: 1080p, Narrow, NTSC: 120FPS / PAL: 120FPS
+34: 1080p, Narrow, NTSC: 90FPS / PAL: 90FPS
+35: 1080p, Narrow, NTSC: 60FPS / PAL: 50FPS
+36: 1080p, Narrow, NTSC: 48FPS / PAL: 48FPS
+37: 1080p, Narrow, NTSC: 30FPS / PAL: 25FPS
+38: 1080p, Narrow, NTSC: 24FPS / PAL: 24FPS
+39: 960p, Wide, NTSC: 120FPS / PAL: 120FPS
+40: 960p, Wide, NTSC: 60FPS / PAL: 50FPS
+41: 720p-SuperView, Wide, NTSC: 120FPS / PAL: 120FPS
+42: 720p-SuperView, Wide, NTSC: 60FPS / PAL: 50FPS
+43: 720p, Wide, NTSC: 120FPS / PAL: 120FPS
+44: 720p, Wide, NTSC: 60FPS / PAL: 50FPS
+45: 720p, Wide, NTSC: 30FPS / PAL: 25FPS
+46: 720p, Medium, NTSC: 120FPS / PAL: 120FPS
+47: 720p, Medium, NTSC: 60FPS / PAL: 50FPS
+48: 720p, Medium, NTSC: 30FPS / PAL: 25FPS
+49: 720p, Narrow, NTSC: 240FPS / PAL: 240FPS
+50: 720p, Narrow, NTSC: 120FPS / PAL: 120FPS
+51: 720p, Narrow, NTSC: 60FPS / PAL: 50FPS
+52: 720p, Narrow, NTSC: 30FPS / PAL: 25FPS
+53: WVGA, Wide, NTSC: 240FPS / PAL: 240FPS
+54: 1080p, Linear, NTSC: 60FPS / PAL: 50FPS
+55: 1080p, Linear, NTSC: 48FPS / PAL: 48FPS
+56: 1080p, Linear, NTSC: 30FPS / PAL: 25FPS
+57: 1080p, Linear, NTSC: 24FPS / PAL: 24FPS
+58: 2.7K-16:9, Linear, NTSC: 30FPS / PAL: 25FPS
+59: 2.7K-16:9, Linear, NTSC: 24FPS / PAL: 24FPS
+setting VideoLowLight (Off | On)
+setting VideoTimelapseRate (0.5 | 1 | 2 | 5 | 10 | 30 | 60)
+setting VideoWithPhotoRate (5 | 10 | 30 | 60)
+setting VideoSpotMeter (Off | On)
+setting VideoProtuneEnable (Off | On)
+setting VideoProtuneWhiteBalance (Auto | 3000K | 4000K | 4800K | 5500K | 6000K | 6500K | Native)
+setting VideoProtuneColor (GoPro | Flat)
+setting VideoProtuneExposure (Auto | 1/12.5 | 1/15 | 1/24 | 1/25 | 1/30 | 1/48 | 1/50 | 1/60 | 1/80 | 1/90 | 1/96 | 1/100 | 1/120 | 1/160 | 1/180 | 1/192 | 1/200 | 1/240 | 1/320 | 1/360 | 1/400 | 1/480 | 1/960)
+setting VideoProtuneIsoMode (Max | Lock)
+setting VideoProtuneIso (6400 | 1600 | 400 | 3200 | 800 | 200 | 100)
+setting VideoProtuneSharpness (High | Med | Low)
+setting VideoProtuneEv (+2 | +1.5 | +1 | +0.5 | 0 | -0.5 | -1 | -1.5 | -2)
+setting PhotoRes (12MP-Wide | 7MP-Wide | 7MP-Med | 5MP-Med)
+setting PhotoContinuousRate (3in1 | 5in1 | 10in1)
+setting PhotoNightShutterDuration (Auto | 2 | 5 | 10 | 15 | 20 | 30)
+setting PhotoSpotMeter (Off | On)
+setting PhotoProtuneEnable (Off | On)
+setting PhotoProtuneWhiteBalance (Auto | 3000K | 4000K | 4800K | 5500K | 6000K | 6500K | Native)
+setting PhotoProtuneColor (GoPro | Flat)
+setting PhotoProtuneIsoMin (800 | 400 | 200 | 100)
+setting PhotoProtuneIso (800 | 400 | 200 | 100)
+setting PhotoProtuneSharpness (High | Med | Low)
+setting PhotoProtuneEv (+2 | +1.5 | +1 | +0.5 | 0 | -0.5 | -1 | -1.5 | -2)
+setting MultiRes (12MP-Wide | 7MP-Wide | 7MP-Med | 5MP-Med)
+setting MultiBurstRate (3in1 | 5in1 | 10in1 | 10in2 | 10in3 | 30in1 | 30in2 | 30in3 | 30in6)
+setting MultiTimelapseRate (0.5 | 1 | 2 | 5 | 10 | 30 | 60)
+setting MultiNightShutterDuration (Auto | 2 | 5 | 10 | 15 | 20 | 30)
+setting MultiNightlapseRate (Continuous | 30sec | 1min | 2min | 5min | 30min | 60min)
+setting MultiSpotMeter (Off | On)
+setting MultiProtuneEnable (Off | On)
+setting MultiProtuneWhiteBalance (Auto | 3000K | 4000K | 4800K | 5500K | 6000K | 6500K | Native)
+setting MultiProtuneColor (GoPro | Flat)
+setting MultiProtuneIsoMin (800 | 400 | 200 | 100)
+setting MultiProtuneIso (800 | 400 | 200 | 100)
+setting MultiProtuneSharpness (High | Med | Low)
+setting MultiProtuneEv (+2 | +1.5 | +1 | +0.5 | 0 | -0.5 | -1 | -1.5 | -2)
+setting Led (Off | 2 | 4)
+setting Beep (Off | 70% | 100%)
+setting OnScreenDisplay (Off | On)
+setting AutoOff (Never | 1 | 2 | 3 | 5) 
