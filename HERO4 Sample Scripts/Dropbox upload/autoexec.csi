@@ -1,11 +1,11 @@
 ######################################################
-#      Take photo, upload to dropbox server          #
+#      Take photo, upload to WebDAV/FTP server       #
 #    Adjust upload command information on line 27    #
 ######################################################
 
 #All lines that begin with a # are comments.
 #This is a script that will execute every time the camera turns on.
-#The script will take a photo, upload to the CamDo Dropbox site and turn the camera off waiting for the next turn on event.
+#The script will take a photo, upload it via WebDAV or FTP to web server(such as box.com) before turning the camera off waiting for the next turn on event.
 
 #Sets the auto turn off to 5 minutes 
 setting AutoOff 5
@@ -23,20 +23,28 @@ mode photo
 #take a photo.
 shutter press
 
-#Edit the Dropbox upload command line below to include your personal information:
-upload MyRouter_guest 11:AA:22:BB:33:C4 30 120 photos dropbox name@email.com_12345
+#Edit the FTP upload command line below to include your personal information:
+upload MyRouter_guest 11:AA:22:BB:33:C4 30 120 photos webdav https://dav.box.com/dav usern4me p4ssword building2/camdo1 -f PrependText1
 
 #turn off camera
 sleep 5
 shutdown
 
-###THE FOLLOWING NOTES EXPLAIN THE DROPBOX COMMAND SYNTAX###
+###THE FOLLOWING NOTES EXPLAIN THE FTP COMMAND SYNTAX###
 
-#upload RouterSSID RouterMAC RouterConnectTimeout OverallTimeout (photos|thumbs) dropbox CAMDO_USERID
+#upload RouterSSID RouterMAC RouterConnectTimeout OverallTimeout (photos|thumbs) (webdav|ftp) server username password [path] [-f PrependText]
 
-#CAMDO_USERID - is your email address followed by a five digit number that will distinguish the folder where the images will be saved.
+#[-f PrependText] - is optional and will prepend the filenames with the word after "-f" to each upload. This works for both Dropbox and FTP.
 
-#dropbox - distinguishes that the command is for automatically uploading an image to DropBox.
+#[path] - is optional and is the directory to change to on successful login to the FTP system. Note the directory must already exist.
+
+#password - is the password for the password protected FTP server.
+
+#username - is the username for the password protected FTP server.
+
+#server - can be either the name of the FTP server or the IP address
+
+#(webdav|ftp) - distinguishes that the command is for automatically uploading an image to server using a WebDAV or FTP protocol.
 
 #(photos|thumbs) - if you want to upload the full sized photo, use the photos command. If you want to only upload smaller thumbnails (approx 1000 pixels wide), use the thumbs command.
 
